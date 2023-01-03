@@ -32,6 +32,13 @@
 /* Медиа запрос: для экранов с шириной ДО 760px */
 @media (max-width: 760px) {
 
+  .arrow-down {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
   .portfolio {
     padding-top: 30px;
     padding-bottom: 50px;
