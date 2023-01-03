@@ -33,10 +33,7 @@
 @media (max-width: 760px) {
 
   .arrow-down {
-    position: absolute;
-    bottom: 90px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    bottom: 120px;
   }
 
   .portfolio {

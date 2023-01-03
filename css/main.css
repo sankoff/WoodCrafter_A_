@@ -67,7 +67,6 @@ img {
   position: absolute;
   bottom: 60px;
   left: 50%;
-  transform: translate(-50%, 0);
 }
 .arrow-down span {
   display: block;
