@@ -13,10 +13,9 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
-img {
-  max-width: 100%;
-  border-radius: 10px;
-}
+/* img {
+  
+} */
 
 .container {
   max-width: 1140px;
@@ -49,7 +48,7 @@ img {
 .header-title {
   margin: 0;
   font-size: 9vw;
-  color: #eeeeee;
+  color: #eee;
 }
 
 .header-subtitle {
@@ -68,6 +67,7 @@ img {
   bottom: 60px;
   left: 50%;
 }
+
 .arrow-down span {
   display: block;
   width: 24px;
@@ -78,23 +78,26 @@ img {
   margin: -16px;
   animation: arrow-down 2s infinite;
 }
+
 .arrow-down span:nth-child(2){
   animation-delay: -0.2s;
 }
+
 .arrow-down span:nth-child(3){
   animation-delay: -0.4s;
 }
+
 @keyframes arrow-down {
   0%{
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
   }
   50%{
-      opacity: 1;
+    opacity: 1;
   }
   100%{
-      opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
   }
 }
 
@@ -128,17 +131,16 @@ img {
   max-width: 540px;
   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
   transition: transform 0.2s ease-in;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+  border-radius: 10px;
 }
 
 .in_stock {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    right: 25px;
-    top: 25px;
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  right: 25px;
+  top: 25px;
 }
 
 .card:hover {
@@ -146,9 +148,9 @@ img {
 }
 
 .card-link {
+  display: block;
   padding: 20px;
   text-decoration: none;
-  display: block;
   color: #000;
   transition: transform 0.2s ease-in;
 }
@@ -163,7 +165,22 @@ img {
 }
 
 .card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
   margin-bottom: 20px;
+  max-width: 500px;
+  max-height: 375px;
+}
+
+.card-img img {
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .card-title {
